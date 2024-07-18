@@ -83,8 +83,9 @@ body{
 .main-image {
   width: 100%; /* Adjust size as needed */
   height: 100%; /* Adjust size as needed */
-  top: -70%;
-  left: -32%;
+   top: 0; /* Ensure it starts from top */
+  left: 0; /* Ensure it starts from left */
+  transform: translate(-32%, -70%);
 }
 
 .top-left {
