@@ -84,7 +84,7 @@ body{
   width: 100%; /* Adjust size as needed */
   height: 100%; /* Adjust size as needed */
     top: -3em; /* Ensure it starts from top */
-  left: 1.3em; /* Ensure it starts from left */
+  left: 0.5em; /* Ensure it starts from left */
   transform: translate(0,0);
 }
 
