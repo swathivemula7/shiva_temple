@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
-  <title>Web Design Mastery | Rayal Park</title>
+  <title>Shree Ramalingeshwara Swamy Temple</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="btn nav__btn">Book Now</button>
+      <button class="btn nav__btn" id="highlights-btn">Highlights</button>
     </nav>
     <div class="section__container header__container" id="home">
       <p>Ancient-Peaceful-Devotional</p>
@@ -37,31 +37,46 @@
     </div>
   </header>
 
-  <section class="section__container booking__container">
-    <div class="booking__form">
-      <div class="input__group">
+  <section class="section__container details__container">
+    <div class="details__form">
+      <div class="details__box">
         <span><i class="ri-calendar-2-fill"></i></span>
         <div>
           <h5>Temple Timings</h5>
-          <p>6:00 AM - 12:00PM</p>
+          <p>6:00 AM - 12:00 PM 4:00 PM - 7:00 PM</p>
+          
         </div>
       </div>
-      <div class="input__group">
+      <div class="details__box">
         <span> <i class="ri-map-pin-fill"></i></span>
         <div>
           <h5>Location</h5>
-          <p>Ramalingapuram, TN</p>
+          <p>Ramalingapuram, TamilNadu</p>
         </div>
       </div>
-      <div class="input__group">
+      <div class="details__box">
         <span> <i class="ri-chat-1-line"></i></span>
         <div>
           <h5>Need Assistance?</h5>
-          <p>Click here to chat</p>
+          <p>Tap here to start a   chat<i class="ri-arrow-right-line" style="font-size: 20px; color: #e82574; margin-left: 5px; "></i>     
+          </p>
         </div>
       </div>
-      <div class="input__group input__btn">
-        <button class="btn">CHATBOT</button>
+      <div class="details__box input__btn">
+        <button id="chatbot-btn" class="btn">CHATBOT</button>
+      </div>
+    </div>
+
+    <div id="chatbox-container" class="chatbox-container">
+      <div class="chatbox-header">
+        <h3>Chatbot</h3>
+        <button id="chatbox-close" class="chatbox-close">&times;</button>
+      </div>
+      <div id="chatbox-content" class="chatbox-content"></div>
+      <div class="chatbox-input-container">
+        <input id="chatbox-input" type="text" placeholder="Type a message...">
+        <button id="chatbox-send"><i class="ri-send-plane-line"></i></button>
+        <button id="chatbox-mic"><i class="ri-mic-line"></i></button>
       </div>
     </div>
   </section>
@@ -70,7 +85,7 @@
     
     <div class="about__image">
       <div class="image-container">
-        <img src="images/img7.jpeg" class="main-image" alt="about" />
+        <img src="images/out.PNG" class="main-image" alt="about" />
       <img src="images/img1.jpg" class="overlap-image top-left" alt="about" />
       <img src="images/img2.jpg" class="overlap-image bottom-right" alt="about" />
       </div>
@@ -78,43 +93,47 @@
     </div>
     <div class="about__content">
       <p class="section__subheader">ABOUT US</p>
-      <h2 class="section__header">About The Ramalingeshwara Temple!</h2>
+      <h2 class="section__header">About The Ramalingeshwara Swamy Temple!</h2>
       <p class="section__description">
-        Nestled in the serene village of Ramalingapuram, Tamil Nadu, the Ramalingapuram Shiva Temple is a 200-year-old
+        Nestled in the serene village of Ramalingapuram, Tamil Nadu, the Sri Parvathi Samedha Ramalingeshwara Swamy Temple is a 300-year-old
         sanctuary of devotion and architectural splendor. This ancient temple, dedicated to Lord Shiva, is renowned for
-        its rich history. Visitors and devotees are welcomed to experience its divine ambiance and partake in its
+        its rich history. Devotees are welcomed to experience its divine ambiance and partake in its
         vibrant cultural traditions. Join us in preserving and celebrating this timeless spiritual heritage.
       </p>
+      <div id="more-content" class="more-content">
+        <p class="section__description">
+          The Ramalingeshwara Swamy Temple is surrounded by beauty of nature and a serene pond, offering an ideal place for deep meditation and dhyana. The peaceful ambiance provides a perfect escape from daily stresses, allowing devotees to connect spiritually.
+        </p>
+      </div>
       <div class="about__btn">
-        <button class="btn">Read More</button>
+        <button id="read-more-btn" class="btn">Read More</button>
       </div>
     </div>
   </section>
 
-  <section class="section__container room__container" id="events">
+  <section class="section__container event__container" id="events">
     <p class="section__subheader">PAST EVENTS</p>
     <h2 class="section__header">The Recap of Past Events</h2>
-    <div class="room__grid">
-      <div class="room__card">
-        <div class="room__card__image">
+    <div class="event__grid">
+      <div class="event__card">
+        <div class="event__card__image">
           <img src="images/img1.jpg" alt="past_event" />
           
         </div>
-        <div class="room__card__details">
-          <h4>MahaShivarathri 2023</h4>
+        <div class="event__card__details">
+          <h4>MahaShivarathri</h4>
           <p>
-            A day of profound devotion and meditation celebrating Lord Shiva with fervent rituals and vibrant
-            festivities.
+            MahaShivarathri, an auspicious occasion is celebrated grandly every year with various events like Hanuman salisa, etc..
           </p>
           <h5>Event Date: <span>18-02-2023</span></h5>
           <a href="https://www.youtube.com/watch?v=pSjRrjnfrFE" class="btn" target="_blank">Watch Video</a>
         </div>
       </div>
-      <div class="room__card">
-        <div class="room__card__image">
-            <img src="images/img2.jpg" alt="past_event" />
+      <div class="event__card">
+        <div class="event__card__image">
+            <img src="images/yagam.PNG" alt="past_event" />
         </div>
-        <div class="room__card__details">
+        <div class="event__card__details">
           <h4>MahaRudhra Yagam</h4>
           <p>
             An elaborate Vedic ritual invoking divine blessings through intense prayers and sacred chants.
@@ -124,39 +143,39 @@
           <a href="https://www.youtube.com/watch?v=Iej044wA_Ro&t" class="btn" target="_blank">Watch Video</a>
         </div>
       </div>
-      <div class="room__card">
-        <div class="room__card__image">
-          <img src="images/img1.jpg" alt="past_event" />
+      <div class="event__card">
+        <div class="event__card__image">
+          <img src="images/nandi.jpeg" alt="past_event" />
         </div>
-        <div class="room__card__details">
-          <h4>Pradhosham</h4>
+        <div class="event__card__details">
+          <h4>Pradhosham Pooja</h4>
           <p>
             A bi-monthly auspicious event dedicated to Lord Shiva, marked by special poojas and spiritual gatherings.
           </p>
-          <h5>Event Date: <span>07-07-2021</span></h5>
+          <h5>Time: <span>4:30 PM onwards</span></h5>
           <a href="https://www.youtube.com/watch?v=avUM685bdow" class="btn" target="_blank">Watch Video</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="service">
-    <div class="section__container service__container">
-      <div class="service__content">
+  <section class="highlight" id="highlights">
+    <div class="section__container highlight__container">
+      <div class="highlight__content">
         <p class="section__subheader">HIGHLIGHTS</p>
-        <h2 class="section__header">Key points of Ramalingeshwara temple</h2>
-        <ul class="service__list">
+        <h2 class="section__header">Key points of Ramalingeshwara Swamy temple</h2>
+        <ul class="highlight__list">
           <li>
             <span><i class="ri-history-line"></i></span>
             Ancient temple with rich heritage
           </li>
           <li>
             <span><i class="ri-magic-line"></i></span>
-            Offers daily poojas and special rituals
+            Offers daily poojas, Pradhosham poojas and special rituals
           </li>
           <li>
             <span><i class="ri-restaurant-2-line"></i></span>
-            Special Hindu days are celebrated with Annadhanam
+            Special Hindu feativals are celebrated with MahaPrasadham
           </li>
           <li>
             <span><i class="ri-community-line"></i></span>
@@ -171,40 +190,21 @@
     <h2 class="gal_heading"><span class="om-symbol">ॐ</span> Gallery</h2>
     <div class="gal_section">
     <div class="gallery">
-      <img src="images/img5.jpeg" alt=''>
+      <img src="images/shivaa.PNG" alt=''>
+      <img src="images/shiva1.jpeg" alt=''>
+      <img src="images/shivan.PNG" alt=''>
+      <img src="images/nandi1.PNG" alt=''>
+      <img src="images/pond.PNG" alt=''>
+      <img src="images/outside.PNG" alt=''>
+      <img src="images/front.PNG" alt=''>
+      <img src="images/full.PNG" alt=''>
       <img src="images/img1.jpg" alt=''>
-      <img src="images/img2.jpg" alt=''>
-      <img src="images/img6.jpeg" alt=''>
-      <img src="images/img7.jpeg" alt=''>
-      <img src="images/img8.jpeg" alt=''>
-      <img src="images/img9.jpeg" alt=''>
-      <img src="images/img10.jpeg" alt=''>
-      <img src="images/img11.jpeg" alt=''>
-      <img src="images/img12.jpeg" alt=''>
+      <img src="images/fulll.PNG" alt=''>
     </div>
   </div>
   </section>
 
-  <!-- <section class="section__container banner__container">
-    <div class="banner__content">
-      <div class="banner__card">
-        <h4>25+</h4>
-        <p>Properties Available</p>
-      </div>
-      <div class="banner__card">
-        <h4>350+</h4>
-        <p>Bookings Completed</p>
-      </div>
-      <div class="banner__card">
-        <h4>600+</h4>
-        <p>Happy Customers</p>
-      </div>
-    </div>
-  </section> -->
-
-  
-
-  <section class="section-bg" id="contact" style="background-image: url(images/img4.jpg);"
+  <section class="section-bg" id="contact" style="background-image: url(images/outside.PNG);"
     data-scroll-index="7">
     <div class="overlay pt-100 pb-100 ">
       <div class="container">
@@ -213,9 +213,9 @@
             <div class="contact-info">
 
               <h2 class="contact-title">Have Any Questions?</h2>
-              <p>We welcome you to the ancient Shivan temple in Ramalingapuram, Tamil Nadu. Whether you have a question, need more information, or wish to share your experiences, we are here to assist you. Please fill out the contact form below, and our dedicated team will get back to you promptly. Your feedback and inquiries are important to us as we strive to provide a serene and enriching experience for all our visitors. Thank you for reaching out to us.</p>
-              <button class="btn-big btn btn-bg">
-                View map <i class="fas fa-arrow-right"></i>
+              <p>We welcome you to the ancient Shivan temple in Ramalingapuram, Tamil Nadu. Whether you have a question, need more information, or wish to share your experiences, we are here to assist you. Please fill out the contact form below, and our dedicated team will get back to you promptly. Your feedback and inquiries are important to us as we strive to provide a serene and enriching experience for all our devotees. Thank you for reaching out to us.</p>
+              <button class="btn-big btn btn-bg" id="view-map-btn">
+                View map 
               </button>
             </div>
           </div>
@@ -246,7 +246,7 @@
                   <div class="col-md-12">
                     <!--contact button-->
                     <button class="btn-big btn btn-bg">
-                      Send Us <i class="fas fa-arrow-right"></i>
+                      Send Us 
                     </button>
                   </div>
                 </div>
@@ -259,33 +259,38 @@
   </section>
 
 
-  <footer class="footer" id="contact">
+  <footer class="footer" id="map-section">
     <div class="footer__container">
       <div class="footer__left">
         <div class="footer__details">
           <span><i class="ri-map-pin-line"></i></span>
           <div class="footer__topic">Address</div>
-          <div class="footer__text">SIVAN Kovil, Ramalingapuram Rd</div>
-          <div class="footer__text">Pennalurpet, Tamil Nadu 602026</div>
+          <div class="footer__text">SIVAN Temple, Ramalingapuram Village</div>
+          <div class="footer__text">Pennalurpet, Uthukottai Thaluk,</div>
+          <div class="footer__text">Tiruvallur District, Tamil Nadu 602026</div>
         </div>
         <div class="footer__details">
           <span><i class="ri-phone-line"></i></span>
           <div class="footer__topic">Phone</div>
-          <div class="footer__text">+91 12345 67890</div>
-          <div class="footer__text">+91 98765 43210</div>
+          <div class="footer__text">+91 73586 31849</div>
+          <div class="footer__text">+91 91767 19122</div>
         </div>
         <div class="footer__details">
           <span><i class="ri-mail-line"></i></span>
           <div class="footer__topic">Email</div>
-          <div class="footer__text">info@shivantemple.com</div>
-          <div class="footer__text">support@shivantemple.com</div>
+          <div class="footer__text">
+            <a href="mailto:srct0521@gmail.com" style="color: #ffffff; text-decoration: underline; transition: color 0.3s;" onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#ffffff'">
+              srct0521@gmail.com
+            </a>
+          </div>
+          
         </div>
       </div>
       <div class="footer__right">
 
         <div class="footer__header">
           <img src="images/logo.jpg" alt="Temple Logo" class="logo-circle">
-          <div class="footer__topic-text">Visit Ramalingeshwara Temple</div>
+          <div class="footer__topic-text">Visit Shree Ramalingeshwara Swamy Temple</div>
         </div>
         <p> Visit our temple located at Ramalingapuram, a serene and sacred place for worship and peace.With its rich
           history and serene ambiance, our sacred temple invites you to immerse yourself in timeless devotion and
